@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trusted Car Expert — Home</title>
+  <meta name="description" content="Honest, no-pressure car buying. Transparent pricing, clean titles, and great customer service.">
+  <link rel="stylesheet" href="./assets/styles.css" />
+
+  <!-- Structured data for your dad (optional—update values) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Dad's Name",
+    "jobTitle": "Automotive Sales Consultant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Your Dealership or Independent Sales"
+    },
+    "areaServed": "Your City, State"
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <h1>Hayden Lake • Car Sales</h1>
+      </div>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./inventory.html">Inventory</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="kicker">No-pressure car buying</span>
+        <h2>Your trusted car expert in <span style="color:var(--accent)">{{CITY}}</span></h2>
+        <p>I make car buying simple: transparent pricing, clear communication, and a smooth process from test drive to keys in hand.</p>
+        <div class="badges">
+          <span class="badge">Clean Titles</span>
+          <span class="badge">CARFAX Ready</span>
+          <span class="badge">Flexible Scheduling</span>
+          <span class="badge">Local & Trusted</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="./inventory.html">Browse Inventory</a>
+          <a class="btn" href="./contact.html">Call / Text</a>
+        </div>
+      </div>
+      <div class="hero-photo" style="background-image:url('./assets/img/dad-placeholder.jpg');"></div>
+    </section>
+
+    <section class="section">
+      <h3>Featured Vehicles</h3>
+      <div id="featured-cars" class="grid cards-3"></div>
+    </section>
+
+    <section class="section">
+      <h3>Why Buyers Choose Me</h3>
+      <div class="grid cards-3">
+        <div class="card"><h4>Transparent Pricing</h4><p>No surprise fees. You’ll know the full number up front.</p></div>
+        <div class="card"><h4>Friendly, Real Support</h4><p>I treat every customer like family — and I’ll earn your repeat business.</p></div>
+        <div class="card"><h4>Quality Inventory</h4><p>Clean titles, well-maintained vehicles, and honest descriptions.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Recent Happy Drivers</h3>
+      <div class="grid cards-3" id="testimonials">
+        <div class="card"><p>“Fast, friendly, and honest. Best car buying experience ever.”</p><p>— Alex P.</p></div>
+        <div class="card"><p>“Everything was exactly as described. 10/10 would buy again.”</p><p>— Monica D.</p></div>
+        <div class="card"><p>“He found me the perfect commuter car within my budget.”</p><p>— Chris R.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© 2025 Hayden Lake — Honest car sales in {{CITY}}.</div></footer>
+
+  <script src="./scripts/main.js"></script>
+  <script>loadFeaturedCars();</script>
+</body>
+</html>

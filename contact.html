@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trusted Car Expert — Contact</title>
+  <meta name="description" content="Contact by phone, text, or email.">
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <h1>Hayden Lake • Car Sales</h1>
+      </div>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./inventory.html">Inventory</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <span class="kicker">Contact</span>
+      <h2>Call / Text / Email</h2>
+      <div class="grid cards-2">
+        <div class="card">
+          <p><strong>Phone:</strong> <a href="tel:+1-555-555-5555" style="color:var(--accent-2)">+1 (555) 555-5555</a></p>
+          <p><strong>Text:</strong> <a href="sms:+1-555-555-5555" style="color:var(--accent-2)">Send a text</a></p>
+          <p><strong>Email:</strong> <a href="mailto:sales@example.com" style="color:var(--accent-2)">sales@example.com</a></p>
+          <p><strong>Location:</strong> Your City, State</p>
+        </div>
+        <div class="card">
+          <!-- Replace the action with your Formspree form URL -->
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label>Name</label>
+            <input name="name" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Phone</label>
+            <input name="phone">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Which car are you interested in?"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© 2025 Hayden Lake</div></footer>
+</body>
+</html>
